@@ -8,7 +8,7 @@
 /* ============================================================
    CONSTANTES Y ESTADO GLOBAL
    ============================================================ */
-const WHATSAPP_NUMERO = '5491100000000'; // ← Reemplazar con el número real
+const WHATSAPP_NUMERO = '+543525301607'; // ← Reemplazar con el número real
 
 const estado = {
   imagen: null,
@@ -663,5 +663,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavegacion();
   initCatalogo();
   initConfigurador();
-  initAnimaciones();
-});
+  initAnimaciones();})
