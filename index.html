@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>San José · Taller de Enmarcaciones — Un marco para lo que importa</title>
+  <meta name="description" content="Enmarcaciones personalizadas en Buenos Aires. Elegí la moldura, el paspartú y las medidas. Kiri natural, pino pintado, estilo galería. Consultá sin compromiso." />
+  <meta name="keywords" content="enmarcaciones, cuadros personalizados, marcos, paspartú, kiri, Buenos Aires, taller" />
+  <meta property="og:title" content="San José · Taller de Enmarcaciones" />
+  <meta property="og:description" content="Un marco para lo que importa. Enmarcaciones personalizadas, materiales de calidad y atención cercana." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tipografías Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ============================================================
+     ENCABEZADO Y NAVEGACIÓN
+     ============================================================ -->
+<header id="encabezado" role="banner">
+  <div class="nav__overlay" id="nav-overlay" aria-hidden="true"></div>
+  <nav class="nav" aria-label="Navegación principal">
+    <a href="#" class="nav__logo" aria-label="San José Taller de Enmarcaciones - inicio">
+      <span class="nav__logo-nombre">san josé</span>
+      <span class="nav__logo-descriptor">Taller de Enmarcaciones</span>
+    </a>
+
+    <ul class="nav__links" id="nav-menu" role="list">
+      <li><a href="#catalogo" id="nav-catalogo">Modelos</a></li>
+      <li><a href="#medidas" id="nav-medidas">Medidas</a></li>
+      <li><a href="#proceso" id="nav-proceso">Proceso</a></li>
+      <li><a href="#taller" id="nav-taller">El taller</a></li>
+      <li>
+        <a href="#configurador" class="btn btn--primario nav__cta" id="nav-configurar">
+          Diseñá tu marco
+        </a>
+      </li>
+    </ul>
+
+    <button
+      class="nav__toggle"
+      id="nav-toggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+
+<!-- ============================================================
+     1. PORTADA
+     ============================================================ -->
+<section id="portada" aria-label="Portada">
+  <div class="portada__contenido">
+    <span class="label portada__pretitulo">Enmarcaciones personalizadas</span>
+    <h1 class="portada__titulo">
+      Un marco para<br>
+      <em>lo que importa.</em>
+    </h1>
+    <p class="portada__subtitulo">
+      Hay fotografías que merecen algo más que quedarse en el teléfono. Elegí la moldura, el paspartú y las medidas — y convertí tus recuerdos en algo para disfrutar durante años.
+    </p>
+    <div class="portada__acciones">
+      <a href="#configurador" class="btn btn--primario" id="hero-configurar">
+        Diseñá tu marco
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#catalogo" class="btn btn--secundario" id="hero-catalogo">Ver modelos</a>
+    </div>
+  </div>
+
+  <div class="portada__imagen" aria-hidden="true">
+    <img
+      src="img/hero.jpg"
+      alt="Marco de madera natural kiri con paspartú blanco, fotografía familiar"
+      width="800"
+      height="600"
+      loading="eager"
+    />
+  </div>
+</section>
+
+
+<!-- ============================================================
+     2. CATÁLOGO DE MODELOS
+     ============================================================ -->
+<section id="catalogo" class="seccion seccion--borde-superior" aria-label="Catálogo de modelos">
+  <div class="contenedor">
+    <div class="seccion__encabezado">
+      <span class="label">Modelos disponibles</span>
+      <h2 class="seccion__titulo">Galería de enmarcaciones</h2>
+      <p class="seccion__bajada">
+        Cada modelo es un punto de partida. Podés personalizar el paspartú, las medidas y el acabado para que quede exactamente como lo imaginás.
+      </p>
+    </div>
+
+    <div class="catalogo__grid" id="catalogo-grid" role="list">
+      <!-- Las tarjetas se generan desde catalog-data.js -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     3. MEDIDAS Y OPCIONES
+     ============================================================ -->
+<section id="medidas" class="seccion" aria-label="Medidas y opciones">
+  <div class="contenedor">
+    <div class="medidas__grid">
+      <div>
+        <span class="label">Tamaños disponibles</span>
+        <h2 class="seccion__titulo" style="margin-bottom:var(--espacio-md)">Medidas y formatos</h2>
+        <p style="margin-bottom:var(--espacio-sm)">
+          Trabajamos con los formatos más comunes para fotografías, láminas e ilustraciones. Si necesitás una medida diferente, consultanos.
+        </p>
+        <p class="medidas__nota">
+          ¿Tu foto tiene un tamaño diferente? Podemos recortar el paspartú a medida o ajustar el marco. Consultanos por WhatsApp antes de encargar.
+        </p>
+      </div>
+      <div>
+        <table class="medidas__tabla" aria-label="Tabla de medidas disponibles">
+          <tbody>
+            <tr class="medidas__fila">
+              <td class="medidas__dim">13 × 18 cm</td>
+              <td class="medidas__uso">Fotos de bolsillo, recuerdos pequeños</td>
+            </tr>
+            <tr class="medidas__fila">
+              <td class="medidas__dim">18 × 24 cm</td>
+              <td class="medidas__uso">Retratos, láminas A5</td>
+            </tr>
+            <tr class="medidas__fila">
+              <td class="medidas__dim">24 × 30 cm</td>
+              <td class="medidas__uso">Fotos de evento, ilustraciones</td>
+            </tr>
+            <tr class="medidas__fila">
+              <td class="medidas__dim">30 × 40 cm</td>
+              <td class="medidas__uso">Láminas A3, obras medianas</td>
+            </tr>
+            <tr class="medidas__fila">
+              <td class="medidas__dim">40 × 50 cm</td>
+              <td class="medidas__uso">Fotografías grandes, lienzos</td>
+            </tr>
+            <tr class="medidas__fila">
+              <td class="medidas__dim">50 × 70 cm</td>
+              <td class="medidas__uso">Afiches, mapas, piezas de colección</td>
+            </tr>
+            <tr class="medidas__fila">
+              <td class="medidas__dim">Medida especial</td>
+              <td class="medidas__uso">Consultanos por WhatsApp</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     4. CONFIGURADOR INTERACTIVO
+     ============================================================ -->
+<section id="configurador" class="seccion seccion--borde-superior" aria-label="Configurador de marco">
+  <div class="contenedor">
+    <div class="seccion__encabezado" style="margin-bottom:var(--espacio-md)">
+      <span class="label">Herramienta de diseño</span>
+      <h2 class="seccion__titulo">Diseñá tu marco</h2>
+      <p class="seccion__bajada">
+        Subí tu foto, elegí las opciones y ves cómo quedaría el resultado. Tu imagen se procesa localmente y no se sube a ningún servidor.
+      </p>
+    </div>
+
+    <div class="configurador__layout">
+
+      <!-- PREVISUALIZACIÓN -->
+      <div class="preview" aria-label="Previsualización del marco">
+        <div class="preview__canvas-wrap" id="preview-wrap">
+          <canvas id="preview-canvas" aria-label="Vista previa del enmarcado"></canvas>
+          <div class="preview__placeholder" id="preview-placeholder" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="preview__placeholder svg">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18M9 21V9"/>
+            </svg>
+            <p>Subí una foto para ver la previsualización</p>
+          </div>
+        </div>
+
+        <p class="preview__nota-privacidad">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="flex-shrink:0;margin-top:1px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Tu foto nunca sale de tu dispositivo. Solo se usa localmente para mostrar la previsualización.
+        </p>
+
+        <div class="preview__acciones" id="preview-acciones" style="display:none">
+          <button class="btn btn--secundario" id="btn-descargar" type="button">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descargar vista previa
+          </button>
+        </div>
+
+        <!-- Resumen de configuración -->
+        <div class="resumen" id="resumen-config" style="margin-top:1.2rem">
+          <div class="resumen__titulo">Resumen de tu configuración</div>
+          <div class="resumen__fila">
+            <span>Medida</span>
+            <strong id="res-medida">—</strong>
+          </div>
+          <div class="resumen__fila">
+            <span>Moldura</span>
+            <strong id="res-moldura">—</strong>
+          </div>
+          <div class="resumen__fila">
+            <span>Paspartú</span>
+            <strong id="res-paspartu">—</strong>
+          </div>
+          <div class="resumen__fila">
+            <span>Color paspartú</span>
+            <strong id="res-color-paspartu">—</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTROLES -->
+      <div class="controles" role="form" aria-label="Opciones de configuración">
+
+        <!-- Foto -->
+        <div class="control-grupo">
+          <div class="control-grupo__titulo">
+            01 · Tu foto
+            <span>o lámina, ilustración, obra</span>
+          </div>
+          <label class="upload-zona" for="input-foto" id="upload-zona" role="button" tabindex="0">
+            <input type="file" id="input-foto" accept="image/*" aria-label="Subir fotografía" />
+            <div class="upload-zona__icono" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+            </div>
+            <p class="upload-zona__texto">
+              Arrastrá tu foto acá o<br>
+              <span class="upload-zona__link">hacé clic para seleccionarla</span>
+            </p>
+          </label>
+        </div>
+
+        <!-- Medida -->
+        <div class="control-grupo">
+          <div class="control-grupo__titulo">02 · Medida del marco</div>
+          <select class="ctrl-select" id="sel-medida" aria-label="Seleccionar medida del marco">
+            <!-- opciones desde catalog-data.js -->
+          </select>
+        </div>
+
+        <!-- Moldura -->
+        <div class="control-grupo">
+          <div class="control-grupo__titulo">03 · Moldura y acabado</div>
+          <div class="moldura-opciones" id="moldura-opciones" role="radiogroup" aria-label="Seleccionar moldura">
+            <!-- opciones desde catalog-data.js -->
+          </div>
+        </div>
+
+        <!-- Paspartú -->
+        <div class="control-grupo">
+          <div class="control-grupo__titulo">04 · Paspartú</div>
+          <div class="toggle-wrap">
+            <label class="toggle" for="toggle-paspartu">
+              <input type="checkbox" id="toggle-paspartu" checked aria-label="Activar paspartú" />
+              <span class="toggle__slider"></span>
+            </label>
+            <span class="toggle__label">Incluir paspartú</span>
+          </div>
+
+          <div class="paspartu-controles" id="paspartu-controles">
+            <div>
+              <div style="font-size:0.75rem;font-weight:600;margin-bottom:0.5rem;color:var(--color-carbon)">Color</div>
+              <div class="paspartu-colores" id="paspartu-colores" role="radiogroup" aria-label="Color del paspartú">
+                <!-- swatches desde catalog-data.js -->
+              </div>
+            </div>
+            <div>
+              <div style="font-size:0.75rem;font-weight:600;margin-bottom:0.5rem;color:var(--color-carbon)">Ancho</div>
+              <select class="ctrl-select" id="sel-ancho-paspartu" aria-label="Ancho del paspartú" style="font-size:0.82rem;padding:0.5rem 0.8rem">
+                <!-- opciones desde catalog-data.js -->
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Datos de contacto -->
+        <div class="control-grupo">
+          <div class="control-grupo__titulo">05 · Tus datos <span>(para el presupuesto)</span></div>
+          <div class="form-grupo">
+            <label for="input-nombre">Nombre</label>
+            <input type="text" id="input-nombre" name="nombre" placeholder="¿Cómo te llamás?" autocomplete="given-name" />
+          </div>
+          <div class="form-grupo">
+            <label for="input-telefono">WhatsApp / teléfono</label>
+            <input type="tel" id="input-telefono" name="telefono" placeholder="11 0000-0000" autocomplete="tel" />
+          </div>
+          <div class="form-grupo">
+            <label for="input-mensaje">Comentarios <span style="font-weight:400;opacity:.7">(opcional)</span></label>
+            <textarea id="input-mensaje" name="mensaje" placeholder="¿Algún detalle especial o consulta?"></textarea>
+          </div>
+        </div>
+
+        <!-- CTA WhatsApp -->
+        <div>
+          <button class="btn btn--whatsapp" id="btn-whatsapp" type="button" style="width:100%;justify-content:center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+            </svg>
+            Solicitar presupuesto por WhatsApp
+          </button>
+          <p style="font-size:0.75rem;color:var(--color-carbon-suave);margin-top:0.5rem;opacity:.8">
+            Te contestamos en el día. Sin compromiso.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     5. PROCESO
+     ============================================================ -->
+<section id="proceso" class="seccion" aria-label="Cómo funciona el proceso">
+  <div class="contenedor">
+    <div class="seccion__encabezado">
+      <span class="label">Cómo funciona</span>
+      <h2 class="seccion__titulo">Del encargo al cuadro</h2>
+    </div>
+
+    <ol class="proceso__pasos" role="list">
+      <li class="paso fade-in">
+        <h3 class="paso__titulo">Elegís el modelo</h3>
+        <p class="paso__desc">Explorá el catálogo o usá el configurador para ver cómo quedaría tu foto con diferentes molduras y paspartús.</p>
+      </li>
+      <li class="paso fade-in">
+        <h3 class="paso__titulo">Nos consultás</h3>
+        <p class="paso__desc">Mandanos un mensaje por WhatsApp con tu configuración. Te respondemos con el precio exacto y los detalles del encargo.</p>
+      </li>
+      <li class="paso fade-in">
+        <h3 class="paso__titulo">Preparamos tu marco</h3>
+        <p class="paso__desc">Trabajamos con materiales seleccionados. Cada pieza se arma a mano con cuidado para que el resultado valga la pena.</p>
+      </li>
+      <li class="paso fade-in">
+        <h3 class="paso__titulo">Lo retirás o te lo enviamos</h3>
+        <p class="paso__desc">Coordinamos la entrega o el retiro según lo que te resulte más cómodo. Sin complicaciones.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     6. EL TALLER
+     ============================================================ -->
+<section id="taller" class="seccion seccion--borde-superior" aria-label="Sobre el taller">
+  <div class="contenedor">
+    <div class="taller__layout">
+      <div class="taller__imagen">
+        <img
+          src="img/catalog-gallery.jpg"
+          alt="Interior del taller San José con marcos y obras sobre mesada de trabajo"
+          width="600"
+          height="450"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <span class="label taller__pretitulo">San José · Taller de Enmarcaciones</span>
+        <h2 class="taller__titulo">Un taller hecho con cuidado</h2>
+        <p class="taller__texto">
+          San José nació del gusto por las cosas bien hechas y del valor que tienen los recuerdos cuando encontramos el lugar correcto para mostrarlos.
+        </p>
+        <p class="taller__texto">
+          Trabajamos con molduras de madera natural kiri y pino seleccionado, paspartús de calidad y una atención personalizada que hace la diferencia. Cada encargo es distinto, y eso nos importa.
+        </p>
+        <p class="taller__texto">
+          El nombre tiene historia familiar. La marca es propia, reconocible y está construida para durar — como los marcos que hacemos.
+        </p>
+        <a href="#contacto" class="btn btn--secundario" style="margin-top:var(--espacio-sm)" id="taller-contacto">
+          Contactanos
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     7. CONTACTO
+     ============================================================ -->
+<section id="contacto" class="seccion" aria-label="Contacto">
+  <div class="contenedor">
+    <div class="contacto__layout">
+      <div>
+        <span class="label">¿Hablamos?</span>
+        <h2 style="color:var(--color-marfil);margin:0.5rem 0 1rem">Consultas sin compromiso</h2>
+        <p class="contacto__texto">
+          La forma más rápida de consultarnos es por WhatsApp. También podés escribirnos por mail o visitarnos en el taller con turno previo.
+        </p>
+        <div class="contacto__datos">
+          <div class="contacto__dato">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            <span>WhatsApp — consultas y encargos</span>
+          </div>
+          <div class="contacto__dato">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>hola@taller-sanjose.com</span>
+          </div>
+          <div class="contacto__dato">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Buenos Aires — con turno previo</span>
+          </div>
+        </div>
+        <div style="margin-top:var(--espacio-md)">
+          <a
+            href="https://wa.me/5491100000000?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20enmarcaciones"
+            class="btn btn--whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="contacto-whatsapp"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            Escribinos por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <!-- Bloque visual: imagen del logo para sección contacto -->
+        <div style="
+          border: 1px solid rgba(255,255,255,0.12);
+          border-radius: 8px;
+          overflow: hidden;
+          aspect-ratio: 3/2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(255,255,255,0.04);
+        ">
+          <img
+            src="img/logo.jpg"
+            alt="San José · Taller de Enmarcaciones — logotipo"
+            width="500"
+            height="333"
+            loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;opacity:0.9"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PIE DE PÁGINA
+     ============================================================ -->
+<footer id="pie" role="contentinfo">
+  <div class="contenedor">
+    <div class="pie__contenido">
+      <span class="pie__marca">san josé · taller de enmarcaciones</span>
+      <span class="pie__copy">Un marco para lo que importa. &copy; 2026</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="catalog-data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
